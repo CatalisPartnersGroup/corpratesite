@@ -1,4 +1,4 @@
-/* CSS Variables for easy theme adjustments */
+/* CSS Variables for theme adjustments */
 :root {
   --primary-color: #0a74da;
   --secondary-color: #f9f9f9;
@@ -157,6 +157,7 @@ section h2 {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 .team-member:hover {
@@ -179,22 +180,40 @@ section h2 {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
-.team-member .subheading {
-  font-weight: 600;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
 }
-.team-member p,
-.team-member ul {
-  font-size: 0.95rem;
-  text-align: left;
-  margin: 0 auto;
-  max-width: 90%;
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
 }
-.team-member ul {
-  list-style: disc;
-  margin-left: 1.5rem;
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.modal .close:hover {
+  color: #000;
 }
 
 /* About Us Table */

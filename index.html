@@ -89,61 +89,74 @@
       <h2>Our Team</h2>
       <div class="grid grid-3">
         <!-- Seiya Inoue -->
-        <div class="team-member">
+        <div class="team-member" data-member="seiya">
           <img src="images/seiya_inoue.jpg" alt="Seiya Inoue" />
           <h3>Seiya Inoue</h3>
           <p class="role"><strong>CEO</strong></p>
-          <p class="subheading">Background</p>
-          <p>
-            During university, Seiya gained experience in AI startups, real estate due diligence, and VC investment support. At Microsoft, he supported Azure PaaS/Serverless developers while conducting independent data analysis. Later, he founded a company focused on AI and SaaS development.
-          </p>
-          <p class="subheading">Experiences</p>
-          <ul>
-            <li><strong>The University of Tokyo, Faculty of Agriculture:</strong> Total synthesis of novel organic compounds</li>
-            <li><strong>The University of Tokyo, Graduate School of Agricultural and Life Sciences:</strong> Research on protein reaction prediction using machine learning</li>
-            <li><strong>Microsoft:</strong> Supported application developers and engaged in technical sales using Azure</li>
-            <li><strong>Catalis Partners Group:</strong> Founded company focused on AI applications and SaaS development businesses</li>
-          </ul>
         </div>
-
         <!-- Kouki Oka -->
-        <div class="team-member">
+        <div class="team-member" data-member="kouki">
           <img src="images/kouki_oka.jpg" alt="Kouki Oka" />
           <h3>Kouki Oka, PhD</h3>
           <p class="role"><strong>CTO</strong></p>
-          <p class="subheading">Background</p>
-          <p>
-            Kouki focuses on organic energy materials, developing amine polymers, battery electrolytes, solid catalysts, and eco-friendly batteries, while advancing metal-free catalysts and biomass-based hydrogen technology. He is the recipient of 34 awards, including the JSPS Ikushi Prize (2021), the New Chemical Technology Research Encouragement Award (2023), and the Aoba Engineering Research Encouragement Award (2024).
-          </p>
-          <p class="subheading">Experiences</p>
-          <ul>
-            <li><strong>Waseda University, Graduate School of Advanced Science and Engineering:</strong> Researched functional organic materials for energy storage and conversion</li>
-            <li><strong>JSPS Postdoctoral Fellow (PD, Ikushi & Special Program):</strong> Studied porous materials for selective ion detection and recovery</li>
-            <li><strong>JSPS International Research Fellow (CPD):</strong> Conducted research on porous materials for selective ion detection, storage, and recovery</li>
-            <li><strong>Osaka University, Graduate School of Engineering (Tenure-Track Assistant Professor):</strong> Researched polymer chemistry, supramolecular chemistry, and functional organic materials for energy conversion and storage</li>
-            <li><strong>Tohoku University (Lecturer, Current); Also Affiliated with Kyoto & Waseda University:</strong> Research on polymer chemistry and functional organic materials for energy production, conversion, storage, and utilization</li>
-          </ul>
         </div>
-
         <!-- Katsuya Saito -->
-        <div class="team-member">
+        <div class="team-member" data-member="katsuya">
           <img src="images/katsuya_saito.jpg" alt="Katsuya Saito" />
           <h3>Katsuya Saito</h3>
           <p class="role"><strong>Director</strong></p>
-          <p class="subheading">Background</p>
-          <p>
-            During university, Katsuya led new app and SaaS development projects as a project leader and engineer at Peer Lodge, and worked on engineering and maintenance of existing SaaS at alma. After joining DeNA as a new graduate, he worked on the Anyca car-sharing service, handling iOS, Android, server-side engineering, product management, and recruitment. He also created new business initiatives at Catalis Partners Group.
-          </p>
-          <p class="subheading">Experiences</p>
-          <ul>
-            <li><strong>Tottori University, Faculty of Engineering:</strong> Majored in Electrical Engineering</li>
-            <li><strong>DeNA:</strong> iOS, Android, server-side engineering, product management, and recruitment</li>
-            <li><strong>Catalis Partners Group:</strong> Launched new business initiatives</li>
-          </ul>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Hidden Member Details (populated in modal) -->
+  <div id="member-seiya" class="member-details" style="display: none;">
+    <h3>Seiya Inoue</h3>
+    <p><strong>Background:</strong></p>
+    <p>During university, Seiya gained experience in AI startups, real estate due diligence, and VC investment support. At Microsoft, he supported Azure PaaS/Serverless developers while conducting independent data analysis. Later, he founded a company focused on AI and SaaS development.</p>
+    <p><strong>Experiences:</strong></p>
+    <ul>
+      <li><strong>The University of Tokyo, Faculty of Agriculture:</strong> Total synthesis of novel organic compounds</li>
+      <li><strong>The University of Tokyo, Graduate School of Agricultural and Life Sciences:</strong> Research on protein reaction prediction using machine learning</li>
+      <li><strong>Microsoft:</strong> Supported application developers and engaged in technical sales using Azure</li>
+      <li><strong>Catalis Partners Group:</strong> Founded company focused on AI applications and SaaS development businesses</li>
+    </ul>
+  </div>
+
+  <div id="member-kouki" class="member-details" style="display: none;">
+    <h3>Kouki Oka, PhD</h3>
+    <p><strong>Background:</strong></p>
+    <p>Kouki focuses on organic energy materials, developing amine polymers, battery electrolytes, solid catalysts, and eco-friendly batteries, while advancing metal-free catalysts and biomass-based hydrogen technology. He is the recipient of 34 awards, including the JSPS Ikushi Prize (2021), the New Chemical Technology Research Encouragement Award (2023), and the Aoba Engineering Research Encouragement Award (2024).</p>
+    <p><strong>Experiences:</strong></p>
+    <ul>
+      <li><strong>Waseda University, Graduate School of Advanced Science and Engineering:</strong> Researched functional organic materials for energy storage and conversion</li>
+      <li><strong>JSPS Postdoctoral Fellow (PD, Ikushi & Special Program):</strong> Studied porous materials for selective ion detection and recovery</li>
+      <li><strong>JSPS International Research Fellow (CPD):</strong> Conducted research on porous materials for selective ion detection, storage, and recovery</li>
+      <li><strong>Osaka University, Graduate School of Engineering (Tenure-Track Assistant Professor):</strong> Researched polymer chemistry, supramolecular chemistry, and functional organic materials for energy conversion and storage</li>
+      <li><strong>Tohoku University (Lecturer, Current); Also Affiliated with Kyoto & Waseda University:</strong> Research on polymer chemistry and functional organic materials for energy production, conversion, storage, and utilization</li>
+    </ul>
+  </div>
+
+  <div id="member-katsuya" class="member-details" style="display: none;">
+    <h3>Katsuya Saito</h3>
+    <p><strong>Background:</strong></p>
+    <p>During university, Katsuya led new app and SaaS development projects as a project leader and engineer at Peer Lodge, and worked on engineering and maintenance of existing SaaS at alma. After joining DeNA as a new graduate, he worked on the Anyca car-sharing service, handling iOS, Android, server-side engineering, product management, and recruitment. He also created new business initiatives at Catalis Partners Group.</p>
+    <p><strong>Experiences:</strong></p>
+    <ul>
+      <li><strong>Tottori University, Faculty of Engineering:</strong> Majored in Electrical Engineering</li>
+      <li><strong>DeNA:</strong> iOS, Android, server-side engineering, product management, and recruitment</li>
+      <li><strong>Catalis Partners Group:</strong> Launched new business initiatives</li>
+    </ul>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="team-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 
   <!-- About Us (Table Format) Section -->
   <section id="about-us" class="about-us section-padding">
@@ -208,5 +221,37 @@
       <p>&copy; 2025 NanoFrontier, Inc. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for Modal -->
+  <script>
+    // すべてのチームメンバー要素を取得
+    const teamMembers = document.querySelectorAll('.team-member');
+    const modal = document.getElementById('team-modal');
+    const modalBody = document.getElementById('modal-body');
+    const closeBtn = document.querySelector('.modal .close');
+
+    teamMembers.forEach(member => {
+      member.addEventListener('click', () => {
+        const memberId = member.getAttribute('data-member');
+        const details = document.getElementById('member-' + memberId);
+        if (details) {
+          modalBody.innerHTML = details.innerHTML;
+          modal.style.display = 'block';
+        }
+      });
+    });
+
+    // モーダルを閉じる
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    // モーダル外部をクリックした場合も閉じる
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
