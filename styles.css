@@ -201,7 +201,7 @@ section h2 {
   width: 90%;
   max-width: 600px;
   position: relative;
-  text-align: center;
+  text-align: center; /* 全体は中央揃え */
 }
 .modal .close {
   position: absolute;
@@ -225,6 +225,12 @@ section h2 {
   border-radius: 50%;
   margin: 0 auto 1rem;
   display: block;
+}
+
+/* Modal Detail Content: Background and Experiences 左揃え */
+.modal-content .member-details p,
+.modal-content .member-details ul {
+  text-align: left;
 }
 
 /* About Us Table */
