@@ -201,7 +201,7 @@ section h2 {
   width: 90%;
   max-width: 600px;
   position: relative;
-  text-align: center; /* 全体は中央揃え */
+  text-align: center; /* タイトル・役職は中央寄せ */
 }
 .modal .close {
   position: absolute;
@@ -217,7 +217,7 @@ section h2 {
   color: #000;
 }
 
-/* Modal Detail Image: 強制固定サイズ (150px × 150px) かつ中央揃え */
+/* Modal Detail Image: 固定サイズ (150px × 150px) かつ中央寄せ */
 .modal-content .detail-img {
   width: 150px !important;
   height: 150px !important;
@@ -227,10 +227,13 @@ section h2 {
   display: block;
 }
 
-/* Modal Detail Content: Background and Experiences 左揃え */
-.modal-content .member-details p,
-.modal-content .member-details ul {
+/* Modal Detail Content: メンバー詳細全体を左寄せにする */
+.modal-content .member-details {
   text-align: left;
+}
+.modal-content .member-details h3,
+.modal-content .member-details .role {
+  text-align: center; /* タイトルと役職は中央寄せ */
 }
 
 /* About Us Table */
