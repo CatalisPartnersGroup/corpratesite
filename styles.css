@@ -30,7 +30,7 @@ body {
   padding: 0 1rem;
 }
 
-/* Header: 背景を透明にして、上部に固定・重なるように設定 */
+/* Header: 背景透明、上部固定 */
 header {
   background: transparent;
   position: absolute;
@@ -232,10 +232,18 @@ section h2 {
   display: block;
 }
 
-/* Modal Detail Content: 詳細情報を左寄せにする */
+/* Modal Detail Content: 詳細情報全体を左寄せにする */
 .modal-content .member-details {
   text-align: left;
 }
+
+/* ヘッダーと役職以外のモーダル内テキストを左寄せ */
+.modal-content .member-details p,
+.modal-content .member-details ul {
+  text-align: left;
+}
+
+/* Modal Detail Headings (名前と役職) 中央寄せ */
 .modal-content .member-details h3,
 .modal-content .member-details .role {
   text-align: center;
