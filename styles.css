@@ -63,7 +63,7 @@ header {
 /* Hero Section */
 .hero {
   position: relative;
-  background: url('https://source.unsplash.com/1600x900/?technology') center/cover no-repeat;
+  background: url('images/home_river.gif') center/cover no-repeat;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -201,7 +201,7 @@ section h2 {
   width: 90%;
   max-width: 600px;
   position: relative;
-  text-align: center; /* タイトル・役職は中央寄せ */
+  text-align: center;
 }
 .modal .close {
   position: absolute;
@@ -227,13 +227,13 @@ section h2 {
   display: block;
 }
 
-/* Modal Detail Content: メンバー詳細全体を左寄せにする */
+/* Modal Detail Content: 詳細情報を左寄せにする */
 .modal-content .member-details {
   text-align: left;
 }
 .modal-content .member-details h3,
 .modal-content .member-details .role {
-  text-align: center; /* タイトルと役職は中央寄せ */
+  text-align: center;
 }
 
 /* About Us Table */
