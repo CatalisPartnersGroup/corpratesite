@@ -201,7 +201,7 @@ section h2 {
   width: 90%;
   max-width: 600px;
   position: relative;
-  text-align: center; /* 中央揃え */
+  text-align: center;
 }
 .modal .close {
   position: absolute;
@@ -217,14 +217,14 @@ section h2 {
   color: #000;
 }
 
-/* Modal Detail Image: 統一サイズ (150px × 150px) かつ中央揃え */
-.member-details .detail-img {
-  display: block;
-  margin: 0 auto 1rem;
-  width: 150px;
-  height: 150px;
+/* Modal Detail Image: 強制固定サイズ (150px × 150px) かつ中央揃え */
+.modal-content .detail-img {
+  width: 150px !important;
+  height: 150px !important;
   object-fit: cover;
   border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: block;
 }
 
 /* About Us Table */
