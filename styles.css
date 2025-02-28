@@ -48,6 +48,7 @@ header {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
+  color: #fff; /* ロゴを白に設定 */
 }
 .nav-list {
   list-style: none;
