@@ -216,6 +216,16 @@ section h2 {
   color: #000;
 }
 
+/* Modal Detail Image: 統一サイズ (150px × 150px) */
+.member-details .detail-img {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 /* About Us Table */
 .about-us table {
   width: 100%;
