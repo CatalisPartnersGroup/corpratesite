@@ -48,7 +48,7 @@ header {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #fff; /* ロゴを白に設定 */
+  color: #fff; /* ヘッダーのロゴを白に設定 */
 }
 .nav-list {
   list-style: none;
@@ -232,18 +232,10 @@ section h2 {
   display: block;
 }
 
-/* Modal Detail Content: 詳細情報全体を左寄せにする */
+/* Modal Detail Content: 詳細情報を左寄せにする */
 .modal-content .member-details {
   text-align: left;
 }
-
-/* ヘッダーと役職以外のモーダル内テキストを左寄せ */
-.modal-content .member-details p,
-.modal-content .member-details ul {
-  text-align: left;
-}
-
-/* Modal Detail Headings (名前と役職) 中央寄せ */
 .modal-content .member-details h3,
 .modal-content .member-details .role {
   text-align: center;
@@ -278,4 +270,40 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #4a90e2;
+    --secondary-color: #121212;
+    --accent-color: #ff5722;
+    --text-color: #f9f9f9;
+    --bg-overlay: rgba(0, 0, 0, 0.6);
+  }
+  body {
+    background: var(--secondary-color);
+    color: var(--text-color);
+  }
+  .logo, .nav-list li a {
+    color: var(--text-color);
+  }
+  .nav-list li a:hover {
+    color: var(--accent-color);
+  }
+  .card {
+    background: #1e1e1e;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+  }
+  .modal-content {
+    background: #1e1e1e;
+    color: var(--text-color);
+  }
+  .about-us th, .about-us td {
+    border-color: #333;
+  }
+  footer {
+    background: #000;
+    color: #fff;
+  }
 }
