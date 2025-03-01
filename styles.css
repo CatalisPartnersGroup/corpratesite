@@ -48,7 +48,7 @@ header {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #fff; /* ヘッダーのロゴを白に設定 */
+  color: #fff; /* ロゴを白に設定 */
 }
 .nav-list {
   list-style: none;
@@ -240,8 +240,12 @@ section h2 {
 .modal-content .member-details .role {
   text-align: center;
 }
+.modal-content .member-details p,
+.modal-content .member-details ul {
+  text-align: left;
+}
 
-/* About Us Table */
+/* About Us Table - セルの背景色は統一 */
 .about-us table {
   width: 100%;
   border-collapse: collapse;
@@ -251,10 +255,7 @@ section h2 {
 .about-us td {
   padding: 0.8rem;
   border: 1px solid #ddd;
-}
-.about-us th {
-  background: #f2f2f2;
-  text-align: left;
+  /* 背景色指定を削除して統一 */
 }
 
 /* Contact Section */
@@ -292,6 +293,10 @@ footer {
     color: var(--accent-color);
   }
   .card {
+    background: #1e1e1e;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+  }
+  .team-member {
     background: #1e1e1e;
     box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
   }
