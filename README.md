@@ -1,1 +1,0 @@
-# seiyainoue3.github.io
